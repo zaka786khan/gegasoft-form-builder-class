@@ -99,7 +99,31 @@ The above will generate a numeric input field as following. Notice we used label
 ```
 <label for='age' >Your Age:</label><input type='number' name='age' value='10' id="age" />
 ```
-
+6. Hack
+As it allows custom XML tags. It can be used to generate more flexible HTML data as following:
+```
+Form::table('class=row',
+  Form::tr('class=col-md-4',
+    Form::td('','Computer') .
+    Form::td('','Laptop') .
+    Form::td('','Screen') .
+    Form::td('','Mouse') .
+    Form::td('','Keyboard')
+  )
+)
+```
+The above will generate the following HTML
+```
+<table class="row">
+<tr class="col-md-4">
+<td >Computer</td>
+<td >Laptop</td>
+<td >Screen</td>
+<td >Mouse</td>
+<td >Keyboard</td>
+</tr>
+</table>
+```
 ## Remember
 - **All Static Method:**  The Form class have all static methods. You don't need to create an object from Form class. 
 - **Always Return String:** The Form class always return string. You can save into a variable or print/echo. 
