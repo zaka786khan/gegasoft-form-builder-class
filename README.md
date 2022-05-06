@@ -1,5 +1,5 @@
 # gegasoft-form-builder-class
-A Standalone Form Builder Class written in PHP language to generate HTML forms and elements easily. It is designed by Gegasoft. This is really very small in size under 10kb and facilitate a lot in creating HTML forms and validating input fields using predefined rules and regex supported.
+A Standalone Form Builder Class written in PHP language to generate HTML forms and to validate input by predefined rules or regex patterns. It is designed by Gegasoft. This is really very small in size under 10kb and facilitate a lot in creating HTML forms and validating input fields.
 
 # Usage Examples:
 ## 1. Creating Forms
