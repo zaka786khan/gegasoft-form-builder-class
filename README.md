@@ -1,5 +1,5 @@
 # gegasoft-form-builder-class
-A Standalone Form Builder Class written in PHP language to generate HTML forms and elements easily. It is designed by Gegasoft
+A Standalone Form Builder Class written in PHP language to generate HTML forms and elements easily. It is designed by Gegasoft. This is really very small in size under 10kb and facilitate a lot in creating HTML forms and validating input fields using predefined rules and regex supported.
 
 # Usage Examples:
 ## 1. Creating Forms
@@ -104,3 +104,11 @@ The above will generate a numeric input field as following. Notice we used label
 - **All Static Method:**  The Form class have all static methods. You don't need to create an object from Form class. 
 - **Always Return String:** The Form class always return string. You can save into a variable or print/echo. 
 - **Input() Method:** The input method requires an extra attribute. For example, the first attribute is the type of the input element. i.e. Form::input('text', 'username', 'ali') is same as Form::text('username','ali') or Form::text_field('username','ali')
+
+# Validating Input Fields
+Usage:
+```
+Form::validate($rules, $input_fields)
+```
+- **$rules** key valued paired rules. keys are mapped on the input fileds on which the rules will be applied and values are the rules to be checked.
+- **input_fields** key valued paired input fields. For example, you can directly pass $\_POST to check if posted values are according to validation rules.
